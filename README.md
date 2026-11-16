@@ -1,12 +1,11 @@
 # E-commerce Sales & Promotion Analysis
 
 **Author:** Akriti Kushwaha · [LinkedIn](https://www.linkedin.com/in/akritikushwaha) · [GitHub](https://github.com/AkritiTech) · akritikushwahaneha@gmail.com
-**Tools:** MySQL 8, Power BI, Excel · **Skills shown:** joins, CTEs, window functions, data modelling, DAX, dashboard design
+**Tools:** MySQL 8, Power BI · **Skills shown:** joins, CTEs, window functions, data modelling, DAX, dashboard design
 
 ![Dashboard overview](images/dashboard-overview.png)
 ![Promotions](images/dashboard-promotions.png)
 ![Products and Cities](images/dashboard-products-cities.png)
-<!-- Add a screenshot of your Power BI Overview page at images/dashboard-overview.png -->
 
 ## The question
 
@@ -19,9 +18,9 @@ The dataset describes an online retailer selling across 16 Indian cities from 20
 ## Data
 
 3,510 orders, 50 customers, 30 products in 8 product lines, 16 cities, 5 promotions, January 2020 to December 2023 (one extra order on 1 January 2024, excluded from trend analysis). Currency is INR.
-Source: public e-commerce sample dataset, [public sample e-commerce sales dataset].
+Source: public sample e-commerce sales dataset.
 
-I loaded it into four MySQL tables (`fact_sales` plus `dim_customers`, `dim_products`, `dim_promotions`), added a "No Promotion" row (`PR000`) so every order links to a promotion, trimmed padded city names, and checked that gross sales equal units × price and net equals gross minus discount on every row (0 errors).
+I prepared the data as four tables (`fact_sales` plus `dim_customers`, `dim_products`, `dim_promotions`) and loaded them into MySQL. I added a "No Promotion" row (`PR000`) so every order links to a promotion, trimmed padded city names, and checked that gross sales equal units × price and net equals gross minus discount on every row (0 errors).
 
 ## What I found
 
@@ -60,7 +59,7 @@ The top 10 of 50 customers account for 26.9% of sales. Monthly sales swing from 
 
 ## Dashboard
 
-Three Power BI pages: **Overview** (KPIs, monthly trend, product-line mix), **Promotions** (discount cost vs revenue by promotion, promotion vs regular orders), **Products & Cities** (top-10 Pareto, city ranking). Slicers for year, city and product line.
+Three Power BI pages: **Overview** (KPI cards, yearly sales, monthly trend with 3-month average, product-line mix, year slicer), **Promotions** (discount cost vs net sales by promotion, discount per rupee of revenue, promotion vs regular order value), **Products & Cities** (top 10 products, net sales by city, customers by city).
 File: `powerbi/ecommerce-sales-analysis.pbix`
 
 ## Repository
