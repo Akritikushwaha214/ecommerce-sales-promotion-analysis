@@ -1,6 +1,6 @@
 # E-commerce Sales & Promotion Analysis
 
-**Author:** Akriti Kushwaha · [LinkedIn](https://www.linkedin.com/in/akritikushwaha) · [GitHub](https://github.com/AkritiTech) · akritikushwahaneha@gmail.com
+**Author:** Akriti Kushwaha · [LinkedIn](https://www.linkedin.com/in/akritikushwaha) · [GitHub](https://github.com/Akritikushwaha214) · akritikushwahaneha@gmail.com
 **Tools:** MySQL 8, Power BI · **Skills shown:** joins, CTEs, window functions, data modelling, DAX, dashboard design
 
 ![Dashboard overview](images/dashboard-overview.png)
